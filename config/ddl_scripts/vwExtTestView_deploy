@@ -71,9 +71,6 @@ ALTER TABLE [ESB_Tibco_TDV].[Group1].[cache_App_RegTest_v04_vwExtTestView0] ADD 
 Go
 
 ALTER TABLE [ESB_Tibco_TDV].[Group1].[cache_App_RegTest_v04_vwExtTestView1] ADD [TEST_COL6] varchar(20), [TEST_COL7] varchar(20);
-ALTER TABLE [ESB_Tibco_TDV].[Group1].[cache_App_RegTest_v04_vwExtTestView] ADD
-[TEST_COL6] varchar(20),
-[TEST_COL7] varchar(20);
 
 Go
 
