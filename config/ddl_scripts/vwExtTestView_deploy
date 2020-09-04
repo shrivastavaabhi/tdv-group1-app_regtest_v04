@@ -1,37 +1,8 @@
 -- /shared/Group1/App_RegTest_v04/2.BusinessLayer/2.1.Extract/vwExtTestView
 -- TABLE
 
-ALTER TABLE [ESB_Tibco_TDV].[Group1].[cache_App_RegTest_v04_vwExtTestView0] ADD [TEST_COL4] varchar(20), [TEST_COL5] varchar(20);
+DROP TABLE [ESB_Tibco_TDV].[Group1].[cache_App_RegTest_v04_vwExtTestView0];
 
-Go
+GO
 
-ALTER TABLE [ESB_Tibco_TDV].[Group1].[cache_App_RegTest_v04_vwExtTestView1] ADD [TEST_COL4] varchar(20), [TEST_COL5] varchar(20);
-ALTER TABLE [ESB_Tibco_TDV].[Group1].[cache_App_RegTest_v04_vwExtTestView] ADD
-[TEST_COL4] varchar(20),
-[TEST_COL5] varchar(20);
-
-Go
-
--- /shared/Group1/App_RegTest_v04/2.BusinessLayer/2.1.Extract/vwExtTestView
--- TABLE
-
-DROP INDEX
-[cache_App_RegTest_v04_vwExtTestView0_newTest] ON [ESB_Tibco_TDV].[Group1].[cache_App_RegTest_v04_vwExtTestView0],
-[cache_App_RegTest_v04_vwExtTestView1_newTest] ON [ESB_Tibco_TDV].[Group1].[cache_App_RegTest_v04_vwExtTestView1]
-;
-
-CREATE INDEX [cache_App_RegTest_v04_vwExtTestView0_newTest] ON [ESB_Tibco_TDV].[Group1].[cache_App_RegTest_v04_vwExtTestView0](
-[SCC] DESC, 
-[AAR_CAR_TYPE] ASC
-);
-
-Go
-
-CREATE INDEX [cache_App_RegTest_v04_vwExtTestView1_newTest] ON [ESB_Tibco_TDV].[Group1].[cache_App_RegTest_v04_vwExtTestView1](
-[SCC] DESC, 
-[AAR_CAR_TYPE] ASC
-);
-
-Go
-
-
+DROP TABLE [ESB_Tibco_TDV].[Group1].[cache_App_RegTest_v04_vwExtTestView1];
